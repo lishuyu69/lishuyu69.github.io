@@ -4,8 +4,8 @@
   </head>
   <script>
     document.designMode='on';
+    document.getElementById("content").innerHTML = document.cookie;
     self.setInterval("update()", 1000);
-    document.getElementById('content').innerHTML=document.cookie;
     function update(){
       document.cookie=document.getElementById('content').textContent;
     }
