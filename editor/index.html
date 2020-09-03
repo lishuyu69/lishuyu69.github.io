@@ -3,8 +3,8 @@
     <title>简单记事本</title>
   </head>
   <script>
-    document.designMode='on';
     document.getElementById("content").innerHTML = document.cookie;
+    document.designMode='on';
     self.setInterval("update()", 1000);
     function update(){
       document.cookie=document.getElementById('content').textContent;
