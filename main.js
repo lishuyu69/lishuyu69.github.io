@@ -15,7 +15,7 @@ function contentLoaded() {
         document.getElementById('main').innerHTML = xmlhttp.responseText;
     }
 }
-if ((location + "").match("index.html") != null) {
+if ((location + "").match("index.html") == "index.html") {
     alert("aa")
     var a = (location + "");
     a.replace("index.html", "");
