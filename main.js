@@ -16,5 +16,5 @@ function contentLoaded() {
     }
 }
 if ((location + "").match("index.html") != null) {
-    location.replace("index.html","")
+    location=(location+"").replace("index.html","")
 }
