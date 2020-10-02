@@ -16,6 +16,7 @@ function contentLoaded() {
         /*document.getElementById('head').innerHTML = "";*/
         document.getElementById('main').innerHTML = '<script defer="defer" src="https://code.getmdl.io/1.3.0/material.min.js"></script>' + xmlhttp.responseText;
         /*document.getElementById('head').innerHTML = document.getElementById('head').innerHTML + ('<scr' + 'ipt defer src="https://code.getmdl.io/1.3.0/material.min.js"></scr' + 'ipt>');*/
+        componentHandler.upgradeElement(document.getElementById('main'))
     }
 }
 if ((location + "").match("index.html") == "index.html") {
