@@ -12,7 +12,7 @@ function loadContent(urlstr) {
 }
 function contentLoaded() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        document.getElementById('main').innerHTML = xmlhttp.responseText;
+        document.getElementById('main').innerHTML = xmlhttp.responseText+'<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>';
     }
 }
 if ((location + "").match("index.html") == "index.html") {
