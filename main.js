@@ -16,6 +16,7 @@ function contentLoaded() {
     }
 }
 if ((location + "").match("index.html") != null) {
+    alert("aa")
     var a = (location + "");
     a.replace("index.html", "");
     location = a;
