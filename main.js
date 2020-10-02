@@ -12,8 +12,8 @@ function loadContent(urlstr) {
 }
 function contentLoaded() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        document.getElementById('main').innerHTML = xmlhttp.responseText;
         document.write('<scr' + 'ipt defer src="https://code.getmdl.io/1.3.0/material.min.js"></scr' + 'ipt>');
+        document.getElementById('main').innerHTML = xmlhttp.responseText;
     }
 }
 if ((location + "").match("index.html") == "index.html") {
