@@ -14,7 +14,7 @@ function contentLoaded() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         /*document.getElementById('main').innerHTML = null;*/
         /*document.getElementById('head').innerHTML = "";*/
-        document.getElementById('body').innerHTML = '<script defer="defer" async="async" src="https://code.getmdl.io/1.3.0/material.min.js"></script>' + xmlhttp.responseText;
+        document.getElementById('main').innerHTML = '<script defer="defer" async="async" src="https://code.getmdl.io/1.3.0/material.min.js"></script>' + xmlhttp.responseText;
         /*document.getElementById('head').innerHTML = document.getElementById('head').innerHTML + ('<scr' + 'ipt defer src="https://code.getmdl.io/1.3.0/material.min.js"></scr' + 'ipt>');*/
     }
 }
