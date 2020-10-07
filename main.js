@@ -13,9 +13,8 @@ function loadContent(urlstr) {
 function contentLoaded() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         document.getElementById('main').innerHTML = "";
-        componentHandler.upgradeElement(document.getElementById('main'))
         document.getElementById('main').innerHTML = xmlhttp.responseText;
-        componentHandler.upgradeElement(document.getElementById('main'))
+        componentHandler.upgradeElements(document.getElementById('main'));
     }
 }
 if ((location + "").match("index.html") == "index.html") {
