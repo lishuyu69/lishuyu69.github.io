@@ -1,21 +1,17 @@
-
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title">lishuyu69</span>
                 <div class="mdl-layout-spacer"></div>
             </div>
         </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">lishuyu69</span>
-            <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="#" onclick="location=('https://www.baidu.com')">Link</a>
-            <a class="mdl-navigation__link"  onclick='setUrl("http://localhost:1502/site/index.html/tt")'>Link</a>
-        </nav>
-        </div>
-        <main class="mdl-layout__content">
+    <div class="mdl-layout__drawer" id="drawer">
+        <script>            loadStr("https://lishuyu69.github.io/drawer.htm", function (s) { document.getElementById('drawer').innerHTML = s })</script>
+    </div>
+    <main class="mdl-layout__content">
         <div class="page-content">
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                 Button
             </button></div>
-    </div>
+    </main>
+</div>
